@@ -1,0 +1,106 @@
+╔══════════════════════════════════════════════════════════════╗
+║                    HIT Platform                              ║
+║           Plataforma de Gestão de Projetos                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+─────────────────────────────────────────
+PRÉ-REQUISITOS — Instale antes de começar
+─────────────────────────────────────────
+1. Node.js 18 ou superior
+   Site: https://nodejs.org
+   → Baixe a versão "LTS" e instale com as opções padrão.
+   → Após instalar, abra o Prompt de Comando e confirme:
+       node --version   (deve aparecer v18.x.x ou superior)
+
+2. PostgreSQL 14 ou superior
+   Site: https://www.postgresql.org/download/windows/
+   → Durante a instalação, defina uma senha para o usuário "postgres".
+   → ANOTE essa senha — ela será solicitada pelo SETUP.bat.
+   → Deixe a porta padrão: 5432.
+
+─────────────────────────────────────────
+INSTALAÇÃO — Faça apenas uma vez
+─────────────────────────────────────────
+Passo 1: Descompacte esta pasta em qualquer lugar do computador.
+         Exemplo: C:\HIT-Platform\
+
+Passo 2: Dentro da pasta, dê duplo clique em:  SETUP.bat
+
+Passo 3: Siga as instruções na tela.
+         Quando pedir a senha do PostgreSQL, digite a que você
+         definiu durante a instalação do PostgreSQL.
+
+Passo 4: Aguarde a instalação (~3 a 5 minutos).
+         Ao final, aparece a mensagem: "Setup concluído!"
+
+─────────────────────────────────────────
+INICIAR A PLATAFORMA — Use sempre que quiser acessar
+─────────────────────────────────────────
+Dê duplo clique em:  INICIAR.bat
+
+O navegador abrirá automaticamente em:
+   http://localhost:5174
+
+─────────────────────────────────────────
+ENCERRAR A PLATAFORMA
+─────────────────────────────────────────
+Feche as duas janelas de terminal que abriram:
+   "HIT Backend"   e   "HIT Frontend"
+
+─────────────────────────────────────────
+CREDENCIAIS DE ACESSO
+─────────────────────────────────────────
+ADMINISTRADOR
+  E-mail: diego@hithammers.com
+  Senha:  admin1234@
+
+MEMBRO (acesso restrito)
+  E-mail: ana.jovino@afazedoria.com
+  Senha:  usuário1@
+
+DEMAIS MEMBROS — Senha de todos: membro123@
+  luiz.perez@afazedoria.com
+  val.soares@afazedoria.com
+  eduardo@hithammers.com
+  thiago@paraello.com
+  renato@paraello.com
+  larissa@afazedoria.com
+  iza@afazedoria.com
+  (Mapurunga e Alana não possuem e-mail — acesse pela
+   aba Configurações para definir um)
+
+─────────────────────────────────────────
+FUNCIONALIDADES DISPONÍVEIS
+─────────────────────────────────────────
+• Login com mostrar/ocultar senha
+• Recuperação de senha por e-mail (requer configuração SMTP)
+• Dashboard com KPIs, gráficos e tarefas críticas
+• Planos de Ação — CRUD completo de projetos
+• Cronogramas — Gantt, Marcos e Calendário
+• Tarefas — Kanban e Lista, com checklist,
+  dependências (com indicador visual) e comentários
+• Indicadores — gráficos de performance
+• Configurações — usuários, times (com gestão de membros),
+  clientes, zona de perigo (excluir todos os projetos)
+
+─────────────────────────────────────────
+DÚVIDAS FREQUENTES
+─────────────────────────────────────────
+P: O SETUP.bat deu erro de senha do PostgreSQL.
+R: Certifique-se de que o serviço do PostgreSQL está em
+   execução. Abra o Gerenciador de Serviços do Windows
+   (services.msc), localize "postgresql-x64-XX" e clique
+   em Iniciar. Depois, execute o SETUP.bat novamente.
+
+P: O navegador abriu mas aparece erro de conexão.
+R: Aguarde mais alguns segundos — o backend pode levar até
+   15s para inicializar na primeira vez. Atualize a página.
+
+P: Esqueci minha senha.
+R: Na tela de login, clique em "Esqueci minha senha" e
+   informe o e-mail cadastrado. (Requer configuração SMTP
+   no arquivo backend/.env após o setup.)
+
+╔══════════════════════════════════════════════════════════════╗
+║  Desenvolvido por Hithammers — hithammers.com                ║
+╚══════════════════════════════════════════════════════════════╝
